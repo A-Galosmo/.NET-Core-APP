@@ -12,7 +12,7 @@ static void Main()
         connection.Open();
 
         // Perform a sample query
-        string query = "SELECT * FROM YourTable";
+        string query = "select * from [dbo].[Records];";
         using (SqlCommand command = new SqlCommand(query, connection))
         {
             using (SqlDataReader reader = command.ExecuteReader())
