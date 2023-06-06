@@ -28,5 +28,18 @@ namespace SQLWebApplication.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpPost]
+        public IActionResult ProcessUserInput(string query)
+        {
+            // Use the captured user input (username) in your application logic
+            // For example, pass it to another method or store it in a database
+
+            // Redirect or return a view
+            return RedirectToAction("Index");
+        }
+
+
+
     }
 }
